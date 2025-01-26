@@ -1,3 +1,5 @@
+.Rproj.user
+
 2. Homework Assignments/Assignment 1
 2. Homework Assignments/Assignment 1/*Solutions
 2. Homework Assignments/Assignment 2
@@ -18,4 +20,9 @@
 /1. In-Class Work/Week 12 - Text Analysis
 /1. In-Class Work/Week 13 - Classification and ML
 /1. In-Class Work/Week 14 - Neural Networks
+
 Midterm/Midterm-Solutions.ipynb
+
+/Slides
+!/Slides/*.html
+
