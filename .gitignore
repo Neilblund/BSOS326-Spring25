@@ -1,4 +1,5 @@
 .Rproj.user
+.Rproj
 .Rhistory
 2. Homework Assignments/Assignment 1
 2. Homework Assignments/Assignment 1/*Solutions
@@ -27,3 +28,4 @@ Midterm/Midterm-Solutions.ipynb
 !/Slides/*.html
 
 *-checkpoint.ipynb
+keys.txt
