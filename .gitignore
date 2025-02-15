@@ -9,7 +9,6 @@
 2. Homework Assignments/Assignment 3/*Solutions
 2. Homework Assignments/Assignment 4/
 2. Homework Assignments/Assignment 4*/Solutions
-
 /1. In-Class Work/Week 04 - Pandas
 /1. In-Class Work/Week 05 - aggregation and split-apply-combine
 /1. In-Class Work/Week 06 - Webscraping
@@ -20,13 +19,16 @@
 /1. In-Class Work/Week 12 - Text Analysis
 /1. In-Class Work/Week 13 - Classification and ML
 /1. In-Class Work/Week 14 - Neural Networks
-
 Midterm/Midterm-Solutions.ipynb
-
 /Slides/*
 !/Slides/*.html
-
 *-checkpoint.ipynb
 *.docx
-keys.txt
 *.png
+keys.yml
+keys.yml
+keys.yml
+.ipynb_checkpoints/keys-checkpoint.txt
+/.ipynb_checkpoints
+*.yml
+/1. In-Class Work/Week 03 - APIs/.ipynb_checkpoints
