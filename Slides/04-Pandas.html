@@ -1627,7 +1627,7 @@ Neil Lund
 <section id="concatenation-1" class="title-slide slide level2 center">
 <h2>Concatenation</h2>
 <p>The Pandas command for this is just <code>pandas.concat(x)</code>, where <code>x</code> is a list of data frames:</p>
-<div id="11efe913" class="cell" data-execution_count="2">
+<div id="ddc3d2a7" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href></a>a <span class="op">=</span> pd.DataFrame(</span>
 <span id="cb1-2"><a href></a>    { <span class="st">&quot;Country&quot;</span>: [<span class="st">&quot;Albania&quot;</span>, <span class="st">&quot;Austria&quot;</span>, <span class="st">&quot;Belarus&quot;</span>, <span class="st">&quot;Belgium&quot;</span>],</span>
 <span id="cb1-3"><a href></a>      <span class="st">&quot;ISO&quot;</span>: [<span class="st">&quot;008&quot;</span>, <span class="st">&quot;040&quot;</span>, <span class="st">&quot;112&quot;</span>, <span class="st">&quot;056&quot;</span>]}</span>
@@ -1709,7 +1709,7 @@ text-align: right;
 <section id="concatenation-2" class="title-slide slide level2 center">
 <h2>Concatenation</h2>
 <p>One small wrinkle here will be cases where two data sets only share <strong>some</strong> columns. The default in Pandas will simply add <code>NaN</code> (missing) values in these cases.</p>
-<div id="7a0a6895" class="cell" data-execution_count="3">
+<div id="e1e8118a" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href></a>a <span class="op">=</span> pd.DataFrame({<span class="st">&quot;Country&quot;</span>: [<span class="st">&quot;Albania&quot;</span>, <span class="st">&quot;Austria&quot;</span>, <span class="st">&quot;Belarus&quot;</span>, <span class="st">&quot;Belgium&quot;</span>],</span>
 <span id="cb2-2"><a href></a>                  <span class="st">&quot;ISO&quot;</span>: [<span class="st">&quot;008&quot;</span>, <span class="st">&quot;040&quot;</span>, <span class="st">&quot;112&quot;</span>, <span class="st">&quot;056&quot;</span>],</span>
 <span id="cb2-3"><a href></a>                  <span class="st">&quot;Region&quot;</span>: [<span class="st">&quot;Balkans&quot;</span>, <span class="st">&quot;C Europe&quot;</span>, <span class="st">&quot;E Europe&quot;</span>, <span class="st">&quot;NW Europe&quot;</span>]})</span>
@@ -3164,7 +3164,7 @@ text-align: right;
 
 <section id="merging-with-pandas-1" class="title-slide slide level2 center">
 <h2>Merging with Pandas</h2>
-<div id="7c37f64a" class="cell" data-execution_count="4">
+<div id="af9804b5" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href></a>lhs <span class="op">=</span> pd.DataFrame({</span>
 <span id="cb3-2"><a href></a>  <span class="st">&quot;Country&quot;</span>: [<span class="st">&quot;Albania&quot;</span>, <span class="st">&quot;Austria&quot;</span>, <span class="st">&quot;Belarus&quot;</span>, <span class="st">&quot;Belgium&quot;</span>, <span class="st">&quot;Kosovo&quot;</span>],</span>
 <span id="cb3-3"><a href></a>   <span class="st">&quot;ISO&quot;</span>: [<span class="st">&quot;008&quot;</span>, <span class="st">&quot;040&quot;</span>, <span class="st">&quot;112&quot;</span>, <span class="st">&quot;056&quot;</span>, <span class="st">&quot;030&quot;</span>]</span>
@@ -3179,7 +3179,7 @@ text-align: right;
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default href="#tabset-1-1">Inner Join</a></li><li><a href="#tabset-1-2">Full Join</a></li><li><a href="#tabset-1-3">Left Join</a></li><li><a href="#tabset-1-4">Right Join</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div id="c40ed2b0" class="cell" data-execution_count="5">
+<div id="01d24ce9" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href></a>pd.merge(left<span class="op">=</span>lhs, right<span class="op">=</span>rhs, how<span class="op">=</span><span class="st">&#39;inner&#39;</span>, on<span class="op">=</span><span class="st">&#39;Country&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 <div>
@@ -3239,7 +3239,7 @@ text-align: right;
 </div>
 </div>
 <div id="tabset-1-2">
-<div id="fd0f8536" class="cell" data-execution_count="6">
+<div id="c82fd978" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href></a>pd.merge(left<span class="op">=</span>lhs, right<span class="op">=</span>rhs, how<span class="op">=</span><span class="st">&#39;outer&#39;</span>, on<span class="op">=</span><span class="st">&#39;Country&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 <div>
@@ -3311,7 +3311,7 @@ text-align: right;
 </div>
 </div>
 <div id="tabset-1-3">
-<div id="7d988124" class="cell" data-execution_count="7">
+<div id="29dc619d" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href></a>pd.merge(left<span class="op">=</span>lhs, right<span class="op">=</span>rhs, how<span class="op">=</span><span class="st">&#39;left&#39;</span>, on<span class="op">=</span><span class="st">&#39;Country&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <div>
@@ -3377,7 +3377,7 @@ text-align: right;
 </div>
 </div>
 <div id="tabset-1-4">
-<div id="5ab7ec09" class="cell" data-execution_count="8">
+<div id="5ed440ff" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href></a>pd.merge(left<span class="op">=</span>lhs, right<span class="op">=</span>rhs, how<span class="op">=</span><span class="st">&#39;right&#39;</span>, on<span class="op">=</span><span class="st">&#39;Country&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <div>
@@ -3449,7 +3449,7 @@ text-align: right;
 <section id="merging-with-pandas-2" class="title-slide slide level2 center">
 <h2>Merging with Pandas</h2>
 <p>Note that if the key doesn’t have the same name in both data sets, you may need to use <code>left_on</code> and <code>right_on</code> instead to identify the appropriate key in both tables:</p>
-<div id="fc29fe3e" class="cell" data-execution_count="9">
+<div id="ae137882" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href></a>lhs <span class="op">=</span> pd.DataFrame({</span>
 <span id="cb8-2"><a href></a>  <span class="st">&quot;Country&quot;</span>: [<span class="st">&quot;Albania&quot;</span>, <span class="st">&quot;Austria&quot;</span>, <span class="st">&quot;Belarus&quot;</span>, <span class="st">&quot;Belgium&quot;</span>, <span class="st">&quot;Kosovo&quot;</span>],</span>
 <span id="cb8-3"><a href></a>   <span class="st">&quot;ISO&quot;</span>: [<span class="st">&quot;008&quot;</span>, <span class="st">&quot;040&quot;</span>, <span class="st">&quot;112&quot;</span>, <span class="st">&quot;056&quot;</span>, <span class="st">&quot;030&quot;</span>]</span>
@@ -3523,16 +3523,6 @@ text-align: right;
 </div>
 </div>
 </section>
-
-<section id="on-your-own" class="title-slide slide level2 center">
-<h2>On your own</h2>
-<p>The <code>gtd_counts</code> data set contains</p>
-<ul>
-<li><p><code>ccode</code> a numeric identifier for each country (this should be the key)</p></li>
-<li><p><code>country_name</code> the name of a country (in text)</p></li>
-<li><p><code>number of terrorist attacks</code> a count of the total number of terrorist attacks occurring in that country.</p></li>
-</ul>
-</section>
 </section>
 <section>
 <section id="split-apply-combine-operations" class="title-slide slide level1 center">
@@ -3563,7 +3553,7 @@ text-align: right;
 <section id="split-apply-combine-1" class="title-slide slide level2 center">
 <h2>Split-Apply-Combine</h2>
 <p>We’ve got the number of points scored in each game by each team in the 2024-2025 NBA season so far. We want to find <strong>each team’s highest scoring game in this season</strong>.</p>
-<div id="941c3d06" class="cell" data-cache="true" data-execution_count="11">
+<div id="0e4b2bc1" class="cell" data-cache="true" data-execution_count="10">
 <details class="code-fold">
 <summary>Show code for retrieving NBA game logs</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href></a><span class="im">import</span> requests</span>
@@ -3590,8 +3580,8 @@ text-align: right;
 <span id="cb9-22"><a href></a>nba_stats <span class="op">=</span> df[[<span class="st">&#39;TEAM_NAME&#39;</span>, <span class="st">&#39;GAME_ID&#39;</span>, <span class="st">&#39;MATCHUP&#39;</span>, <span class="st">&#39;PTS&#39;</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="068a206d" class="cell" data-execution_count="12">
-<div class="cell-output cell-output-display" data-execution_count="12">
+<div id="a07c1774" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display" data-execution_count="11">
 <div>
 <div>
 <style scoped>
@@ -3619,38 +3609,38 @@ text-align: right;
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>San Antonio Spurs</td>
-<td>0022400795</td>
-<td>SAS vs. PHX</td>
-<td>120</td>
+<td>Milwaukee Bucks</td>
+<td>0022400793</td>
+<td>MIL vs. LAC</td>
+<td>116</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>Portland Trail Blazers</td>
-<td>0022400796</td>
-<td>POR vs. LAL</td>
-<td>102</td>
+<td>Memphis Grizzlies</td>
+<td>0022400788</td>
+<td>MEM @ IND</td>
+<td>113</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>Los Angeles Lakers</td>
-<td>0022400796</td>
-<td>LAL @ POR</td>
-<td>110</td>
+<td>Atlanta Hawks</td>
+<td>0022400790</td>
+<td>ATL vs. ORL</td>
+<td>108</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>Charlotte Hornets</td>
-<td>0022400794</td>
-<td>CHA @ DEN</td>
-<td>115</td>
+<td>Brooklyn Nets</td>
+<td>0022400791</td>
+<td>BKN vs. CLE</td>
+<td>97</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>Phoenix Suns</td>
-<td>0022400795</td>
-<td>PHX @ SAS</td>
-<td>109</td>
+<td>Cleveland Cavaliers</td>
+<td>0022400791</td>
+<td>CLE @ BKN</td>
+<td>110</td>
 </tr>
 </tbody>
 </table>
@@ -3675,11 +3665,11 @@ text-align: right;
 <h2>Split-Apply-Combine</h2>
 <p>We can use <code>DataFrame.groupby(colname)</code> to do the <strong>splitting step.</strong> Using <code>.groupby</code> on a data frame will automatically max subsequent aggregations operate over the grouping variable instead of the entire data frame and automatically recombines the results.</p>
 <p>So, while <code>max</code> might ordinarily give us the maximum for the entire column, doing <code>max</code> after <code>.groupby</code> gives us the maximum for each group:</p>
-<div id="9a9a5652" class="cell" data-execution_count="13">
+<div id="eccc2df0" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href></a>nba_grouped <span class="op">=</span> nba_stats.groupby(<span class="st">&quot;TEAM_NAME&quot;</span>)</span>
 <span id="cb10-2"><a href></a></span>
 <span id="cb10-3"><a href></a>nba_grouped[<span class="st">&#39;PTS&#39;</span>].<span class="bu">max</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="13">
+<div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>TEAM_NAME
 Atlanta Hawks             148
 Boston Celtics            142
@@ -3719,9 +3709,9 @@ Name: PTS, dtype: int64</code></pre>
 <section id="split-apply-combine-4" class="title-slide slide level2 center">
 <h2>Split-Apply-Combine</h2>
 <p>Or we can use <code>describe</code> to get multiple summary stats by group:</p>
-<div id="1b38aa87" class="cell" data-execution_count="14">
+<div id="de7962dd" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href></a>nba_stats.groupby(<span class="st">&quot;TEAM_NAME&quot;</span>)[<span class="st">&#39;PTS&#39;</span>].describe().head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="14">
+<div class="cell-output cell-output-display" data-execution_count="13">
 <div>
 <div>
 <style scoped>
@@ -3830,9 +3820,9 @@ text-align: right;
 <section id="split-apply-combine-5" class="title-slide slide level2 center">
 <h2>Split-Apply-Combine</h2>
 <p>What would we do if we wanted a list of the lowest scoring games this season? Note that each row only shows points for one team, so each game would be represented by two rows.</p>
-<div id="befc43b5" class="cell" data-execution_count="15">
+<div id="a77d0e7a" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href></a>nba_stats.sort_values(<span class="st">&#39;GAME_ID&#39;</span>).head(<span class="dv">6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="15">
+<div class="cell-output cell-output-display" data-execution_count="14">
 <div>
 <div>
 <style scoped>
@@ -3873,32 +3863,32 @@ text-align: right;
 <td>116</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">1321</td>
-<td>Detroit Pistons</td>
-<td>0022400002</td>
-<td>DET vs. MIA</td>
-<td>123</td>
-</tr>
-<tr class="even">
 <td data-quarto-table-cell-role="th">1325</td>
 <td>Miami Heat</td>
 <td>0022400002</td>
 <td>MIA @ DET</td>
 <td>121</td>
 </tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">1324</td>
-<td>Charlotte Hornets</td>
-<td>0022400003</td>
-<td>CHA @ ORL</td>
-<td>89</td>
-</tr>
 <tr class="even">
+<td data-quarto-table-cell-role="th">1321</td>
+<td>Detroit Pistons</td>
+<td>0022400002</td>
+<td>DET vs. MIA</td>
+<td>123</td>
+</tr>
+<tr class="odd">
 <td data-quarto-table-cell-role="th">1320</td>
 <td>Orlando Magic</td>
 <td>0022400003</td>
 <td>ORL vs. CHA</td>
 <td>114</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1324</td>
+<td>Charlotte Hornets</td>
+<td>0022400003</td>
+<td>CHA @ ORL</td>
+<td>89</td>
 </tr>
 </tbody>
 </table>
@@ -3921,11 +3911,11 @@ text-align: right;
 
 <section id="split-apply-combine-7" class="title-slide slide level2 center">
 <h2>Split-Apply-Combine</h2>
-<div id="87675887" class="cell" data-execution_count="16">
+<div id="4b6027df" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href></a>games <span class="op">=</span> nba_stats.groupby(<span class="st">&#39;GAME_ID&#39;</span>)</span>
 <span id="cb14-2"><a href></a></span>
 <span id="cb14-3"><a href></a>games[[<span class="st">&#39;MATCHUP&#39;</span>,<span class="st">&#39;PTS&#39;</span>]].<span class="bu">sum</span>().sort_values(<span class="st">&#39;PTS&#39;</span>).head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="16">
+<div class="cell-output cell-output-display" data-execution_count="15">
 <div>
 <div>
 <style scoped>
@@ -3961,7 +3951,7 @@ text-align: right;
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">0022400277</td>
-<td>CHA vs. ORLORL @ CHA</td>
+<td>ORL @ CHACHA vs. ORL</td>
 <td>179</td>
 </tr>
 <tr class="odd">
@@ -3976,7 +3966,7 @@ text-align: right;
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0022400753</td>
-<td>HOU vs. TORTOR @ HOU</td>
+<td>TOR @ HOUHOU vs. TOR</td>
 <td>181</td>
 </tr>
 <tr class="even">
@@ -4017,11 +4007,11 @@ text-align: right;
 <h2>Split-Apply-Combine</h2>
 <p>Finally, what if we wanted to do something like add the total points scored as an additional column in the original data set?</p>
 <p>We can use the <code>transform</code> method on a grouped data frame to produce a column with the same indices as the original data, and then re-append that result as a new column on the original data frame:</p>
-<div id="da3a0797" class="cell" data-execution_count="17">
+<div id="0f0bd614" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href></a>nba_stats.loc[:, <span class="st">&#39;total points&#39;</span>] <span class="op">=</span> nba_stats.groupby(<span class="st">&#39;GAME_ID&#39;</span>)[<span class="st">&#39;PTS&#39;</span>].transform(<span class="st">&#39;sum&#39;</span>)</span>
 <span id="cb15-2"><a href></a></span>
 <span id="cb15-3"><a href></a>nba_stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="17">
+<div class="cell-output cell-output-display" data-execution_count="16">
 <div>
 <div>
 <style scoped>
@@ -4050,43 +4040,43 @@ text-align: right;
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>San Antonio Spurs</td>
-<td>0022400795</td>
-<td>SAS vs. PHX</td>
-<td>120</td>
-<td>229</td>
+<td>Milwaukee Bucks</td>
+<td>0022400793</td>
+<td>MIL vs. LAC</td>
+<td>116</td>
+<td>226</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>Portland Trail Blazers</td>
-<td>0022400796</td>
-<td>POR vs. LAL</td>
-<td>102</td>
-<td>212</td>
+<td>Memphis Grizzlies</td>
+<td>0022400788</td>
+<td>MEM @ IND</td>
+<td>113</td>
+<td>240</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>Los Angeles Lakers</td>
-<td>0022400796</td>
-<td>LAL @ POR</td>
-<td>110</td>
-<td>212</td>
+<td>Atlanta Hawks</td>
+<td>0022400790</td>
+<td>ATL vs. ORL</td>
+<td>108</td>
+<td>222</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>Charlotte Hornets</td>
-<td>0022400794</td>
-<td>CHA @ DEN</td>
-<td>115</td>
-<td>244</td>
+<td>Brooklyn Nets</td>
+<td>0022400791</td>
+<td>BKN vs. CLE</td>
+<td>97</td>
+<td>207</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>Phoenix Suns</td>
-<td>0022400795</td>
-<td>PHX @ SAS</td>
-<td>109</td>
-<td>229</td>
+<td>Cleveland Cavaliers</td>
+<td>0022400791</td>
+<td>CLE @ BKN</td>
+<td>110</td>
+<td>207</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">...</td>
@@ -4098,43 +4088,43 @@ text-align: right;
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">1643</td>
-<td>Toronto Raptors</td>
-<td>0022400067</td>
-<td>TOR vs. CLE</td>
-<td>106</td>
-<td>242</td>
+<td>Miami Heat</td>
+<td>0022400065</td>
+<td>MIA vs. ORL</td>
+<td>97</td>
+<td>213</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1644</td>
+<td>Los Angeles Lakers</td>
+<td>0022400062</td>
+<td>LAL vs. MIN</td>
+<td>110</td>
+<td>213</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1645</td>
 <td>Minnesota Timberwolves</td>
 <td>0022400062</td>
 <td>MIN @ LAL</td>
 <td>103</td>
 <td>213</td>
 </tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">1645</td>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1646</td>
 <td>Boston Celtics</td>
 <td>0022400061</td>
 <td>BOS vs. NYK</td>
 <td>132</td>
 <td>241</td>
 </tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1646</td>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">1647</td>
 <td>New York Knicks</td>
 <td>0022400061</td>
 <td>NYK @ BOS</td>
 <td>109</td>
 <td>241</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">1647</td>
-<td>Los Angeles Lakers</td>
-<td>0022400062</td>
-<td>LAL vs. MIN</td>
-<td>110</td>
-<td>213</td>
 </tr>
 </tbody>
 </table>
@@ -4146,12 +4136,12 @@ text-align: right;
 </div>
 </section>
 </section>
-<section id="functions" class="title-slide slide level1 center">
-<h1>Functions</h1>
+<section id="functions-reference" class="title-slide slide level1 center">
+<h1>Functions Reference</h1>
 <table>
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 19%">
+<col style="width: 80%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -4161,72 +4151,19 @@ text-align: right;
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>pd.concat(x, y)</code></td>
-<td>Combine X and Y along their rows</td>
+<td><pre><code>pd.concat([x, y, z])</code></pre></td>
+<td>Combine X, Y, Z… along their <strong>rows</strong>. (Use when you have two data sets with the same variables but different observations)</td>
 </tr>
 <tr class="even">
-<td><code>pd.merge(left = x, right= y, on = &#39;key&#39;)</code></td>
-<td>Combine X and Y along the columns, matching on the key variable. (The default method is an inner join, but you can change this with the <code>how</code> argument)</td>
+<td><pre><code>pd.merge(left = x,                  right= y,
+         on = &#39;key&#39;,
+         how =&#39;inner&#39;
+         )</code></pre></td>
+<td>Combine X and Y along the <strong>columns</strong>, matching on the key variable. Use when you want to combine two data sets with different information about the same set of observations.</td>
 </tr>
 <tr class="odd">
-<td><code>pd.groupby(var)</code></td>
-<td>Creates a grouped data frame. Subsequent commands like <code>max</code>, <code>mean</code>, <code>min</code> will be performed on groups instead of the entire data frame.</td>
-</tr>
-</tbody>
-</table>
-<p><code>df</code> = the name of your data frame</p>
-<table>
-<colgroup>
-<col style="width: 62%">
-<col style="width: 37%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Function</th>
-<th>Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>pd.read_csv(&quot;file name here&quot;)</code></td>
-<td>Imports a comma-separated format file as a pandas data frame</td>
-</tr>
-<tr class="even">
-<td><code>pd.DataFrame()</code></td>
-<td>Converts “x” to a pandas data frame. (for instance, a dictionary object retrieved from an API)</td>
-</tr>
-<tr class="odd">
-<td><code>pd.crosstab(x, y)</code></td>
-<td>Creates a two-way frequency table for two categorical variables (x and y)</td>
-</tr>
-</tbody>
-</table>
-</section>
-
-<section id="some-useful-functions" class="title-slide slide level1 center">
-<h1>Some useful functions</h1>
-<p>DataFrame Methods (df = the name of a data frame object)</p>
-<table>
-<colgroup>
-<col style="width: 54%">
-<col style="width: 45%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><code>df.head(), df.tail()</code></td>
-<td>print the first or last rows of a data frame</td>
-</tr>
-<tr class="even">
-<td><code>df.info()</code></td>
-<td>print information about the data frame (number of columns, names, types etc)</td>
-</tr>
-<tr class="odd">
-<td><code>df.describe()</code></td>
-<td>Print summary statistics for all numeric columns in the data frame</td>
-</tr>
-<tr class="even">
-<td><code>df.value_counts([&#39;columnname&#39;])</code></td>
-<td>Print frequencies for a categorical variable (replace ‘columname’) with the name of your variable</td>
+<td><pre><code>pd.groupby(var)</code></pre></td>
+<td>Creates a grouped data frame. Subsequent commands like <code>max</code>, <code>mean</code>, <code>min</code> will be performed on groups instead of the entire data frame. Use when you want to do a split-apply-combine operation.</td>
 </tr>
 </tbody>
 </table>
